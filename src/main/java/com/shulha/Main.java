@@ -31,9 +31,9 @@ public class Main {
 //      2
         System.out.println("Task 2");
 
-        int number1 = rand.nextInt(upperBound) * -1;
-        int number2 = rand.nextInt(upperBound);
-        int number3 = rand.nextInt(upperBound) * -1;
+        int number1 = rand.nextInt(upperBound) - 50;
+        int number2 = rand.nextInt(upperBound) - 50;
+        int number3 = rand.nextInt(upperBound) - 50;
 
         System.out.println("Numbers 1: " + number1 + ", 2: " + number2 + ", 3: " + number3);
 
@@ -46,8 +46,8 @@ public class Main {
 //      3
         System.out.println("Task 3");
 
-        int upperBound1 = 1000;
-        int randomNumber = rand.nextInt(upperBound1);
+        upperBound = 1000;
+        int randomNumber = rand.nextInt(upperBound);
 
         if (randomNumber % 2 != 1 ) {
             System.out.println("The random number " + randomNumber + " is paired");
@@ -60,8 +60,8 @@ public class Main {
 //      Additional task
         System.out.println("Additional task");
 
-        int upperBound2 = 255;
-        double numberForChanging = rand.nextInt(upperBound2);
+        upperBound = 255;
+        double numberForChanging = rand.nextInt(upperBound);
         String binaryNumber = "";
         System.out.println("The decimal number: " + Math.round(numberForChanging));
 
@@ -77,7 +77,7 @@ public class Main {
         StringBuilder sb = new StringBuilder(binaryNumber);
         sb.reverse();
         binaryNumber = sb.toString();
-        System.out.println("to the binary number: " + binaryNumber);
+        System.out.println("to the binary number equals: " + binaryNumber);
         System.out.println();
     }
 }
